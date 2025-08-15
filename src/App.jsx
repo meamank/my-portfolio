@@ -57,7 +57,7 @@ export default function App() {
       <main className="container mx-auto px-4">
         <section
           id="home"
-          className="min-h-screen flex flex-col justify-center items-center text-center"
+          className="min-h-[50vh] md:min-h-screen flex flex-col justify-center items-center text-center"
         >
           <div className="animate-fade-in-up">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -66,7 +66,7 @@ export default function App() {
             <p className="text-lg md:text-2xl text-zinc-500 mb-8">
               React and React-Native Developer
             </p>
-            <p className="max-w-2xl mx-auto text-gray-600 mb-8">
+            <p className="max-w-2xl mx-auto text-gray-600 mb-8 text-sm md:text-base">
               I build modern, responsive, and scalable web and mobile
               applications. With 2+ years of experience, I turn ideas into
               high-quality code.
@@ -80,12 +80,12 @@ export default function App() {
             About Me
           </h2>
           <div className="max-w-3xl mx-auto bg-white rounded-lg p-8 shadow-sm border border-gray-200">
-            <p className="text-lg text-gray-700 mb-4">
+            <p className="text-sm md:text-lg text-gray-700 mb-4">
               My journey in web and mobile development started 5 years ago, and
               since then, I've been dedicated to building beautiful and
               functional applications.
             </p>
-            <p className="text-lg text-gray-700 mb-4">
+            <p className="text-sm md:text-lg text-gray-700 mb-4">
               My expertise lies in the MERN stack, particularly with React and
               React-Native for front-end development and Node.js with Express
               for the back-end. I enjoy the challenge of solving complex
@@ -95,12 +95,12 @@ export default function App() {
             <p className="text-lg text-gray-700 mb-4 font-bold">
               Full-time Roles
             </p>
-            <p className="flex justify-between text-md text-gray-700 mb-4 p-4 rounded-lg border border-gray-200 shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
+            <p className="flex justify-between text-sm md:text-md items-center text-gray-700 mb-4 p-4 rounded-lg border border-gray-200 shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
               <span>Publicis Sapient</span>
               <span>React Developer</span>
               <span>2021 - 2023</span>
             </p>
-            <p className="flex justify-between text-md text-gray-700 mb-4  p-4 rounded-lg border border-gray-200 shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
+            <p className="flex justify-between text-sm md:text-md items-center text-center text-gray-700 mb-4  p-4 rounded-lg border border-gray-200 shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
               <span>ConceptOwl</span>
               <span>Frontend Developer</span>
               <span>2019 - 2020</span>
@@ -119,10 +119,10 @@ export default function App() {
                 key={index}
                 className="bg-white rounded-lg p-6 shadow-sm hover:shadow-lg border border-gray-200 transform hover:-translate-y-2 transition-all duration-300 flex flex-col"
               >
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
+                <h3 className="text-md md:text-lg font-bold text-gray-900 mb-2">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 mb-4 flex-grow text-sm">
+                <p className="text-gray-600 mb-4 flex-grow text-sm md:text-base">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
@@ -160,7 +160,7 @@ export default function App() {
               {skills.map((skill, index) => (
                 <div
                   key={index}
-                  className="bg-white text-gray-700 py-2 px-5 rounded-lg shadow-sm border border-gray-200 hover:bg-gray-100 transition-colors"
+                  className="bg-white text-sm md:text-base text-gray-700 py-2 px-5 rounded-lg shadow-sm border border-gray-200 hover:bg-gray-100 transition-colors"
                 >
                   {skill}
                 </div>
@@ -174,13 +174,13 @@ export default function App() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Get In Touch
           </h2>
-          <p className="text-lg text-gray-600 mb-8 max-w-xl mx-auto">
+          <p className="text-sm md:text-lg text-gray-600 mb-8 max-w-xl mx-auto">
             I'm currently open to new opportunities. If you have a project in
             mind or just want to say hi, feel free to reach out.
           </p>
           <a
             href="mailto:meamank@gmail.com"
-            className="bg-gray-800 text-white font-bold py-3 px-8 rounded-lg hover:bg-gray-900 transition-colors text-lg inline-block"
+            className="bg-gray-800 text-white font-bold py-3 px-8 rounded-lg hover:bg-gray-900 transition-colors text-sm md:text-lg inline-block"
           >
             Say Hello
           </a>
