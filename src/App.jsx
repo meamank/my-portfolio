@@ -1,5 +1,5 @@
 import React from "react";
-import { Linkedin, Github, ExternalLink } from "lucide-react";
+import { Linkedin, Github, ExternalLink, Mail } from "lucide-react";
 
 export default function App() {
   const projects = [
@@ -29,7 +29,8 @@ export default function App() {
         "https://drive.google.com/file/d/1rbuk8M2w37uLq2ZDaC6b23TPCg4RJtNN/view?usp=sharing",
     },
     {
-      title: "GallerySync: A Private, Self-Hosted Photo & Video Backup System",
+      title:
+        "GallerySync: A Private, Self-Hosted Photo & Video Backup System (Live Soon)",
       description:
         "GallerySync is a full-stack mobile application designed to provide a secure and private solution for backing up photos and videos from an Android device to a self-hosted server. In an era where data privacy is paramount, this project moves away from third-party cloud services, giving the user complete ownership and control over their personal media. Built with React Native (Expo), the app provides a native user experience for browsing photo albums, viewing media, and managing the backup process.",
       tags: ["React-Native", "Expo", "Native-wind", "Node.js"],
@@ -64,13 +65,39 @@ export default function App() {
               Hi, I'm Aman Kumar
             </h1>
             <p className="text-lg md:text-2xl text-zinc-500 mb-8">
-              React and React-Native Developer
+              React Developer
             </p>
             <p className="max-w-2xl mx-auto text-gray-600 mb-8 text-sm md:text-base">
               I build modern, responsive, and scalable web and mobile
               applications. With 2+ years of experience, I turn ideas into
               high-quality code.
             </p>
+          </div>
+          <div className="flex justify-center space-x-6 mt-12">
+            <a
+              href="https://github.com/meamank"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-500 hover:text-indigo-600 transition-colors"
+            >
+              <Github size={28} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/meamank/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-500 hover:text-indigo-600 transition-colors"
+            >
+              <Linkedin size={28} />
+            </a>
+            <a
+              href="mailto:meamank@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-500 hover:text-indigo-600 transition-colors"
+            >
+              <Mail size={28} />
+            </a>
           </div>
         </section>
 
