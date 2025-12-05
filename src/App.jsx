@@ -4,6 +4,14 @@ import { Linkedin, Github, ExternalLink, Mail } from "lucide-react";
 export default function App() {
   const projects = [
     {
+      title: "Stupid Notes",
+      description:
+        "A minimalist note-taking application inspired by Google Keep. Features include creating, editing, and organizing notes with a clean and intuitive interface. Built with modern web technologies to provide a fast and responsive user experience for managing daily thoughts and tasks.",
+      tags: ["React", "Appwrite", "Tailwind"],
+      liveUrl: "https://notes.amankr.dev",
+      githubUrl: "https://github.com/meamank/stupid-notes",
+    },
+    {
       title: "MockManch - Mock Test Platform",
       description:
         "A full-stack Mock/Quiz platform for competitive exams. A variety of quizzes like NCERT chapter-wise tests, PYQs from Exams and many more. Built for web using Vite + React and for mobile using React-Native with Expo.",
